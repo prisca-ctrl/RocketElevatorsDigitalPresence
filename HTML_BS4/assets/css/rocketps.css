@@ -1,0 +1,36 @@
+.btnre{ color: royalblue;}
+
+
+.img-resize{
+   max-width: 100%;
+   height: auto;
+}
+
+.btn-warning2 {
+   background-image: -webkit-linear-gradient(top, #c5d4f0 0%, #3224eb 100%);
+   background-image:      -o-linear-gradient(top, #4469ad 0%, #3224eb 100%);
+   background-image: -webkit-gradient(linear, left top, left bottom, from(#4469ad), to(#3224eb));
+   background-image:         linear-gradient(to bottom, #4469ad 0%, #3224eb 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffeb9316', GradientType=0);
+   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+   background-repeat: repeat-x;
+   border-color: #490615;
+ }
+
+ .btn-default2 {
+   color: #333;
+   background-color: #fff;
+   border-color: #0e0000;
+   border-width: 1px;
+   padding: 6px 12px;
+   line-height: 26px;
+}
+
+.pcus
+    {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+}
