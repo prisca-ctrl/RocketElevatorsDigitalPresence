@@ -34,3 +34,19 @@
       margin-inline-start: 0px;
       margin-inline-end: 0px;
 }
+
+.img-fixed
+{ width: 100%;
+height: 240px;
+}
+
+.img-port
+{
+   width: auto;
+   height: 200px;
+}
+
+.img-new
+{ width: 210px;
+height: 117px;
+}
