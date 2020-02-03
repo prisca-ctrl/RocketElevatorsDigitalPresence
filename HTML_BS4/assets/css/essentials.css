@@ -252,7 +252,6 @@ img.img-fluid {
 /* IE & Mozilla fix */
 div.row>div img.img-fluid {
 	width: 100%;
-	
 }
 
 
@@ -1831,7 +1830,7 @@ section.section-video .overlay {
 
 /* overlay */
 .overlay {
-	background:rgba( 67, 76, 80, 0.2);
+	background:rgba(0,0,0, 0.2);
 	position:absolute; 
 	left:0; right:0; top:0; bottom:0;
 	z-index:1; /* required for IE */
