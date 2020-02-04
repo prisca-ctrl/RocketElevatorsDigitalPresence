@@ -296,40 +296,51 @@
 										<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
 									</div>
 							</div>
-				<div id="formfirst" class="formulaire" class="container-fluid" >
+				
+							<div id="formfirst" class="formulaire" class="container-fluid" >
 							<div class="header-title content-bordered">
 								<p>	
 									<h3>Building info</h3>
 								</p>
 							</div>
 							<!-- choose type of building -->
-					<div class="chooseType">
+					<div class="row">
+							<div class="col-md-6" class="header-title content-bordered">
+						<div class="chooseType">
 						<label class="labelStyle">Type of Building</label>
-
 						<select class="ansStyle" onchange="showHide()" id="buildingType" name="Type_of_building">
 							<option value="">---- Type ----</option>
-							<option value="residential">residential</option>
-							<option value="commercial">commercial</option>
-							<option value="corporate">corporate</option>
-							<option value="hybride">hybride</option>
+							<option value="residential">Residential</option>
+							<option value="commercial">Commercial</option>
+							<option value="corporate">Corporate</option>
+							<option value="hybride">Hybride</option>
 						</select>
-					
-					<!-- /choose type of building -->
+						</div>
+							
+					<!-- if residential -->
+					<div class="showHidden" id="res1" style="display: block;"> 
+						<div class="askStyle" data-children-count="1">
+							<label class="labelStyle">How many apartments?</label>
+							<input name="Residential_apartment_number" class="ansStyle" type="number" placeholder="Apartments Number" id="apartmentNumber" onkeyup="calcCageNumber(); quoteMake()" data-kwimpalastatus="alive" data-kwimpalaid="1580525515199-2"><br>
+						</div>
+
+						<div class="askStyle" data-children-count="1">
+							<label class="labelStyle">How many floors?</label>
+							<input name="Residential_floor_number" class="ansStyle" type="number" placeholder="Floors Number" id="resFloorNumber" onkeyup="calcCageNumber(); quoteMake()"><br>
+						</div>
+
+						<div class="askStyle" data-children-count="1">
+							<label class="labelStyle">How many undergrounds?</label>
+							<input name="Residential_underground_number" class="ansStyle" type="number" placeholder="Undergrounds Number"><br>
+						</div>
+					</div>
+					</div>  
+					<!-- /if residential -->
 							<div class="row">
-									<div class="col-md-4">
-										<label for="contact_departement">Departement</label>
-										<select class="form-control pointer" name="contact[services]">
-											<option value="">--- Select ---</option>
-											<option value="Residential">Residential</option>
-											<option value="Commercial">commercial</option>
-											<option value="Other">Other</option>
-										</select>
-									</div>
-							</div>
-							<div class="row">
+
 					</div>
 					
-					</form>
+					
 				</div>
 			</div>	
 				<!-- /FORM -->
@@ -363,7 +374,7 @@
 						<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:1800-555-1234">1800-555-1234</a></span>
 						<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@rocketelevators.com">mail@rocketelevators.com</a></span>
 					</p> -->
-				</div>
+				
 				<!-- /INFO -->
 			</div>  
 			<form class="new_quote" id="new_quote" action="/quotes" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="CMa8MsST6osfd1F2PsBrfRai+A8hi0u6uaETAZP9FQgkhuE9hDEK3bX0J1urrN/pFrr36xp6Aiilwu/BzV2msA==">
@@ -382,25 +393,6 @@
 					
 					<!-- /choose type of building -->
 
-					<!-- if residential -->
-					<div class="showHidden" id="res1" style="display: block;"> 
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many apartments?</label>
-							<input name="Residential_apartment_number" class="ansStyle" type="number" placeholder="Apartments Number" id="apartmentNumber" onkeyup="calcCageNumber(); quoteMake()" data-kwimpalastatus="alive" data-kwimpalaid="1580525515199-2"><br>
-						</div>
-
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many floors?</label>
-							<input name="Residential_floor_number" class="ansStyle" type="number" placeholder="Floors Number" id="resFloorNumber" onkeyup="calcCageNumber(); quoteMake()"><br>
-						</div>
-
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many undergrounds?</label>
-							<input name="Residential_underground_number" class="ansStyle" type="number" placeholder="Undergrounds Number"><br>
-						</div>
-
-					</div>  
-					<!-- /if residential -->
 				</div>
 					<!-- if commercial -->
 					<div class="showHidden" id="com1" style="display: none;"> 
@@ -635,7 +627,8 @@
 									</span>
 								</div>
 							</form>
-						</div>						
+						</div>
+					</form>						
 							<!-- /Newsletter Form -->
 							<address>
 								<ul class="list-unstyled">
