@@ -54,7 +54,8 @@ height: 117px;
    div.formulaire
    {
    padding-top:60px;
+   padding: right 10px;;
    margin-bottom:60px;
-   
+   border: #0e0000;
    }
    }
