@@ -274,7 +274,7 @@
 					<form action="php/contact.php" method="post" enctype="multipart/form-data">
 						<fieldset>
 							<input type="hidden" name="action" value="contact_send" />
-<DIV class="container-fluid">
+				<div class="container-fluid">
 							<div class="row">
 									<div class="col-md-4">
 										<label for="contact:name">Full Name *</label>
@@ -285,17 +285,21 @@
 										<input required type="text" value="" class="form-control" name="contact[businessname][required]" id="contact:businessname">
 									</div>
 							</div>
-						
 							<div class="row">
 									<div class="col-md-4">
 										<label for="contact:phone">Phone</label>
 										<input type="tel" value="" class="form-control" name="contact[phone]" id="contact:phone">
 									</div>
-									<div class="col-md-10">
+									<div class="col-md-8">
 										<label for="contact:email">E-mail Address *</label>
 										<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
 									</div>
 							</div>
+				<div id="formfirst" class="formulaire" class="container-fluid" >
+							<p>	
+								 <br><br>
+							<h3>Please fill with your informations and we will send you a quote</h3>
+							</p>
 							<!-- choose type of building -->
 					<div class="chooseType">
 						<label class="labelStyle">Type of Building</label>
@@ -322,12 +326,8 @@
 							</div>
 							<div class="row">
 					</div>
-					</fieldset>
-
-
+					
 					</form>
-
-				
 				</div>
 			</div>	
 				<!-- /FORM -->
@@ -361,18 +361,11 @@
 						<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:1800-555-1234">1800-555-1234</a></span>
 						<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@rocketelevators.com">mail@rocketelevators.com</a></span>
 					</p> -->
-<!-- 
 				</div>
 				<!-- /INFO -->
-
-			
 			</div>  
-		
-	
 			<form class="new_quote" id="new_quote" action="/quotes" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="CMa8MsST6osfd1F2PsBrfRai+A8hi0u6uaETAZP9FQgkhuE9hDEK3bX0J1urrN/pFrr36xp6Aiilwu/BzV2msA==">
 
-				<!-- form -->
-				
 					<!-- choose type of building -->
 					<div class="chooseType">
 						<label class="labelStyle">Type of Building</label>
@@ -384,7 +377,7 @@
 							<option value="corporate">corporate</option>
 							<option value="hybride">hybride</option>
 						</select>
-					</div>
+					
 					<!-- /choose type of building -->
 
 					<!-- if residential -->
@@ -406,7 +399,7 @@
 
 					</div>  
 					<!-- /if residential -->
-
+				</div>
 					<!-- if commercial -->
 					<div class="showHidden" id="com1" style="display: none;"> 
 						<div class="askStyle" data-children-count="1">
@@ -462,7 +455,7 @@
 
 					</div> 
 					<!-- /if corporate -->
-
+				</div>
 					<!-- if hybrid -->
 					<div class="showHidden" id="hyb1" style="display: none;"> 
 						<div class="askStyle" data-children-count="1">
@@ -533,7 +526,7 @@
 						</div>      
 					</div>
 
-
+				</fieldset>
 
 					<div class="divSize"> 
 						<div class="askStyle" data-children-count="7">
@@ -566,7 +559,7 @@
 			
 					<br>                           
 					<button class="btn btn-green btn-lg" type="submit">SUBMIT QUOTE</button>
-					
+				</div>					
 					<div style="margin-top:20px">
 						<script src="https://www.recaptcha.net/recaptcha/api.js" async="" defer=""></script>
 <div data-sitekey="6Lecl8AUAAAAAAIMxRl-QuqUtyNmqILz-Bayy5a-" class="g-recaptcha "><div style="width: 304px; height: 78px;" data-children-count="1"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lecl8AUAAAAAAIMxRl-QuqUtyNmqILz-Bayy5a-&amp;co=aHR0cDovL3d3dy5yb2NrZXRlbGV2YXRvcnNtaHIueHl6Ojgw&amp;hl=en&amp;v=TYDIjJAqCk6g335bFk3AjlC3&amp;size=normal&amp;cb=cbc2hvfrrv" width="304" height="78" role="presentation" name="a-q1dj9hs2tgkh" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" data-children-count="0"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>

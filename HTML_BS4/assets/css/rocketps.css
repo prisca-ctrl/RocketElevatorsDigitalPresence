@@ -51,7 +51,7 @@ height: 240px;
 height: 117px;
 }
 
-   div.formulaire
+div.formulaire
    {
    padding-top:60px;
    padding: right 10px;;
@@ -60,5 +60,8 @@ height: 117px;
    margin-right: 75px;
    margin-left: 50px;
 }
-   }
-   }
+#formfirst 
+{
+   border-bottom-style: dotted;
+   
+}
