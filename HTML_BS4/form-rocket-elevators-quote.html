@@ -274,7 +274,7 @@
 					<form action="php/contact.php" method="post" enctype="multipart/form-data">
 						<fieldset>
 							<input type="hidden" name="action" value="contact_send" />
-
+<DIV class="container-fluid">
 							<div class="row">
 									<div class="col-md-4">
 										<label for="contact:name">Full Name *</label>
@@ -291,17 +291,25 @@
 										<label for="contact:phone">Phone</label>
 										<input type="tel" value="" class="form-control" name="contact[phone]" id="contact:phone">
 									</div>
-									<div class="col-md-8">
+									<div class="col-md-10">
 										<label for="contact:email">E-mail Address *</label>
 										<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
 									</div>
 							</div>
-							
+							<!-- choose type of building -->
+					<div class="chooseType">
+						<label class="labelStyle">Type of Building</label>
+
+						<select class="ansStyle" onchange="showHide()" id="buildingType" name="Type_of_building">
+							<option value="">---- Type ----</option>
+							<option value="residential">residential</option>
+							<option value="commercial">commercial</option>
+							<option value="corporate">corporate</option>
+							<option value="hybride">hybride</option>
+						</select>
+					
+					<!-- /choose type of building -->
 							<div class="row">
-									<div class="col-md-8">
-										<label for="contact:projectname">Project Name *</label>
-										<input required type="text" value="" class="form-control" name="contact[projectname][required]" id="contact:projectname">
-									</div>
 									<div class="col-md-4">
 										<label for="contact_departement">Departement</label>
 										<select class="form-control pointer" name="contact[services]">
@@ -313,36 +321,15 @@
 									</div>
 							</div>
 							<div class="row">
-							
-								
-									<div class="col-md-12">
-										<label for="contact:message">Message *</label>
-										<textarea required maxlength="10000" rows="8" class="form-control" name="contact[message]" id="contact:message"></textarea>
-									</div>
-									
-							</div>
-							<div class="row">
-									<div class="col-md-12">
-										<label for="contact:attachment">File Attachment</label>
+					</div>
+					</fieldset>
 
-										<!-- custom file upload -->
-										<input class="custom-file-upload" type="file" id="file" name="contact[attachment]" id="contact:attachment" data-btn-text="Select a File" />
-										<small class="text-muted block">Max file size: 10Mb (zip/pdf/jpg/png)</small>
 
-									</div>
-							</div>
-
-						</fieldset>
-
-						<div class="row">
-							<div class="col-md-12">
-								<button type="submit" class="btn btn-bordered btn-blue"><i class="fa fa-check"></i> SEND MESSAGE</button>
-							</div>
-						</div>
 					</form>
 
 				
 				</div>
+			</div>	
 				<!-- /FORM -->
 
 			 
