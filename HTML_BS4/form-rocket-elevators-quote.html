@@ -217,8 +217,6 @@
 
 					<h3>For feedback or other inquiries please select the general inquiries button. <strong><em></em></strong></h3>
 
-					
-					<!--
 						MESSAGES
 						
 							How it works?
@@ -263,7 +261,10 @@
 					</div><!-- /Alert Mandatory -->
 			
 			
-			
+	<form class="new_quote" id="new_quote" action="/quotes" accept-charset="UTF-8" method="post">
+		<input name="utf8" type="hidden" value="✓">
+		<input type="hidden" name="authenticity_token" value="CMa8MsST6osfd1F2PsBrfRai+A8hi0u6uaETAZP9FQgkhuE9hDEK3bX0J1urrN/pFrr36xp6Aiilwu/BzV2msA==">
+
 				<div class="formulaire" class="container">
 					<div class="heading-title heading-dotted text-center">
 							<p>	
@@ -271,10 +272,11 @@
 							<h3>Please fill with your informations and we will send you a quote</h3>
 							</p>
 					</div>
-					<form action="php/contact.php" method="post" enctype="multipart/form-data">
+    <form action="php/contact.php" method="post" enctype="multipart/form-data">
 			
 			<fieldset>
-							<input type="hidden" name="action" value="contact_send" />
+
+			<input type="hidden" name="action" value="contact_send" />
 				<div class="container-fluid">
 							<div class="row">
 									<div class="col-md-4">
@@ -296,28 +298,33 @@
 										<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
 									</div>
 							</div>
-				
-							<div id="formfirst" class="formulaire" class="container-fluid" >
-							<div class="header-title content-bordered">
+				</fieldset>
+				<fieldset>
+				<form action="php/contact.php" method="post" enctype="multipart/form-data"></form>
+				<div id="formfirst" class="formulaire" class="container-fluid" >
+							<div class="header-title content-bordered text-center">
 								<p>	
 									<h3>Building info</h3>
 								</p>
 							</div>
 							<!-- choose type of building -->
 					<div class="row">
-							<div class="col-md-6" class="header-title content-bordered">
+							<div class="col-md-8">
+							<div  class="header-title content-bordered">
 						<div class="chooseType">
 						<label class="labelStyle">Type of Building</label>
-						<select class="ansStyle" onchange="showHide()" id="buildingType" name="Type_of_building">
+						<select class= "first"class="ansStyle" onchange="showHide()" id="buildingType" name="Type_of_building">
 							<option value="">---- Type ----</option>
-							<option value="residential">Residential</option>
+							<option value="residential" id="res1">Residential</option>
 							<option value="commercial">Commercial</option>
 							<option value="corporate">Corporate</option>
 							<option value="hybride">Hybride</option>
 						</select>
 						</div>
-							
+					</div>
+					</form>		
 					<!-- if residential -->
+					
 					<div class="showHidden" id="res1" style="display: block;"> 
 						<div class="askStyle" data-children-count="1">
 							<label class="labelStyle">How many apartments?</label>
@@ -335,6 +342,9 @@
 						</div>
 					</div>
 					</div>  
+
+</form>
+					
 					<!-- /if residential -->
 							<div class="row">
 
@@ -377,218 +387,11 @@
 				
 				<!-- /INFO -->
 			</div>  
-			<form class="new_quote" id="new_quote" action="/quotes" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="CMa8MsST6osfd1F2PsBrfRai+A8hi0u6uaETAZP9FQgkhuE9hDEK3bX0J1urrN/pFrr36xp6Aiilwu/BzV2msA==">
-
-					<!-- choose type of building -->
-					<div class="chooseType">
-						<label class="labelStyle">Type of Building</label>
-
-						<select class="ansStyle" onchange="showHide()" id="buildingType" name="Type_of_building">
-							<option value="">---- Type ----</option>
-							<option value="residential">residential</option>
-							<option value="commercial">commercial</option>
-							<option value="corporate">corporate</option>
-							<option value="hybride">hybride</option>
-						</select>
-					
-					<!-- /choose type of building -->
-
-				</div>
-					<!-- if commercial -->
-					<div class="showHidden" id="com1" style="display: none;"> 
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many stores?</label>
-							<input name="Commercial_store_number" class="ansStyle" type="number" placeholder="Stores Number"><br>
-						</div>
-
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many floors?</label>
-							<input name="Commercial_floor_number" class="ansStyle" type="number" placeholder="Floors Number"><br>
-						</div>
-
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many undergrounds?</label>
-							<input name="Commercial_underground_number" class="ansStyle" type="number" placeholder="Undergrounds Number"><br>
-						</div>
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many elevator cages?</label>
-							<input name="Commercial_elevCage_number" class="ansStyle" type="number" placeholder="Cage Number" id="comElevCageNumber" onkeyup="calcCageNumber(); quoteMake()"><br>
-						</div>
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many parking places?</label>
-							<input name="Commercial_parkPlace_number" class="ansStyle" type="number" placeholder="Parking Places"><br>
-						</div>
-
-					</div> 
-					<!-- /if commercial -->
-
-					<!-- if corporate -->
-					<div class="showHidden" id="corp1" style="display: none;"> 
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many separate tenant companies?</label>
-							<input name="Corporate_companie_number" class="ansStyle" type="number" placeholder="Companies Number"><br>
-						</div>
-
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many floors?</label>
-							<input name="Corporate_floor_number" class="ansStyle" type="number" placeholder="Floors Number" id="corFloorNumber" onkeyup="calcCageNumber(); quoteMake()"><br>
-						</div>
-
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many undergrounds?</label>
-							<input name="Corporate_underground_number" class="ansStyle" type="number" placeholder="Undergrounds Number" id="corUndergrNumber" onkeyup="calcCageNumber(); quoteMake()"><br>
-						</div>
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many parking places?</label>
-							<input name="Corporate_parkPlace_number" class="ansStyle" type="number" placeholder="Parking Places"><br>
-						</div>
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many occupants per floor?</label>
-							<input name="Corporate_OccPerFloor_number" class="ansStyle" type="number" placeholder="Occupants Per Floor" id="corOccPerFloorNumber" onkeyup="calcCageNumber(); quoteMake()" data-kwimpalastatus="alive" data-kwimpalaid="1580525515199-3"><br>
-						</div>
-
-					</div> 
-					<!-- /if corporate -->
-				</div>
-					<!-- if hybrid -->
-					<div class="showHidden" id="hyb1" style="display: none;"> 
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many stores?</label>
-							<input name="Hybrid_store_number" class="ansStyle" type="number" placeholder="Stores Number"><br>
-						</div>
-
-						<div class="askStyle" data-children-count="1">                                    
-							<label class="labelStyle">How many floors?</label>
-							<input name="Hybrid_floor_number" class="ansStyle" type="number" placeholder="Floors Number" id="hybFloorNumber" onkeyup="calcCageNumber(); quoteMake()"><br>
-						</div>
-
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many undergrounds?</label>
-							<input name="Hybrid_underground_number" class="ansStyle" type="number" placeholder="Undergrounds Number" id="hybUndergrNumber" onkeyup="calcCageNumber(); quoteMake()"><br>
-						</div>
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many parking places?</label>
-							<input name="Hybrid_parkPlace_number" class="ansStyle" type="number" placeholder="Parking Places"><br>
-						</div>
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many occupants per floor?</label>
-							<input name="Hybrid_OccPerFloor_number" class="ansStyle" type="number" placeholder="Occupants Per Floor" id="hybOccPerFloorNumber" onkeyup="calcCageNumber(); quoteMake()" data-kwimpalastatus="alive" data-kwimpalaid="1580525515199-4"><br>
-						</div>
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many hours per day of activity?</label>
-							<input name="Hybrid_hourAct_number" class="ansStyle" type="number" placeholder="Open hours" id="hoursOfActivity" onkeyup="correctHour()"><br>
-						</div>    
-
-					</div> 
-					<!-- /if hybrid -->
-
-					
-					<div id="estCageNumber" class="divSize"> 
-						<div class="askStyle">
-							<label class="labelStyle">The estimate cage number is :</label>
-							<input name="Est_cage_number" class="ansStyle" type="number" id="estimateCageNumber" placeholder="Estimate Cage Number" value="" disabled=""><br>
-						</div>      
-					</div>
-					
-
-					<div class="divSize"> 
-						<div class="askStyle">
-							<label class="labelStyle">Which range of elevator cage do you need?</label>
-							<input type="radio" value="standard" name="Range" class="radioStyle0" id="stdRange" onclick="quoteMake()"><i style="color: #fff; font-weight: bold;"> STANDARD</i>
-							<input type="radio" value="premium" name="Range" class="radioStyle1" id="prmRange" onclick="quoteMake()"><i style="color: #fff; font-weight: bold;"> PREMIUM</i>
-							<input type="radio" value="excelium" name="Range" class="radioStyle1" id="excRange" onclick="quoteMake()"><i style="color: #fff; font-weight: bold;"> EXCELIUM</i>
-
-						</div>      
-					</div>
-		
-					
-					<div class="divSize"> 
-						<div class="askStyle" data-children-count="0">
-							<label class="labelStyle">Here is your quote :</label>
-							<div class="quoteStyle">
-								<label class="quoteLabelStyle">Unit Price :</label><label class="quoteLabelStyle" id="unitP"></label> <br>
-							</div>
-							<div class="quoteStyle">
-								<label class="quoteLabelStyle">Elevator Price :</label><label class="quoteLabelStyle" id="elevP"></label> <br>
-							</div>
-							<div class="quoteStyle">
-								<label class="quoteLabelStyle">Installation Cost :</label><label class="quoteLabelStyle" id="instP"></label> <br>
-							</div>
-							<div class="quoteStyle">
-								<label class="quoteLabelStyle">Total Price :</label><label class="quoteLabelStyle" id="totalP"></label><br>
-							</div>
-						</div>      
-					</div>
-
-				</fieldset>
-
-					<div class="divSize"> 
-						<div class="askStyle" data-children-count="7">
-							<label class="labelStyle">Clients information</label>
-							<div class="quoteStyle" data-children-count="7">
-								<label class="quoteLabelStyle">Your Full Name:</label>
-								<input name="Name" class="ansStyle" required="" type="text" data-kwimpalastatus="alive" data-kwimpalaid="1580525515199-6"><br>
-								<label class="quoteLabelStyle">Your Company:</label>
-								<input name="Company" class="ansStyle" required="" type="text" data-kwimpalastatus="alive" data-kwimpalaid="1580525515199-7"><br>
-								<label class="quoteLabelStyle">Email Address:</label>
-								<input name="Email" class="ansStyle" required="" type="email" data-kwimpalastatus="alive" data-kwimpalaid="1580525515199-8"><br>
-								<label class="quoteLabelStyle">Phone Number:</label>
-								<input name="Phone" class="ansStyle" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required="" type="tel" data-kwimpalastatus="alive" data-kwimpalaid="1580525515199-9"><br>
-								<label class="quoteLabelStyle">Project Name:</label>
-								<input name="Project_Name" class="ansStyle" required="" type="text" data-kwimpalastatus="alive" data-kwimpalaid="1580525515199-10"><br>
-								<label class="quoteLabelStyle">Project Description:</label>
-								<input name="Project_Description" class="ansStyle" required="" type="text"><br>
-								<label class="quoteLabelStyle">Message:</label>
-								<input name="Message" class="ansStyle" required="" type="message"><br>
-							</div>
-						
-						</div>      
-					</div>
-
-						<input name="Est_cage_number" id="E" style="display: none">                            
-						<input name="Unit_price" id="A" style="display: none">
-						<input name="Elevator_price" id="B" style="display: none">
-						<input name="Installation_cost" id="C" style="display: none">
-						<input name="Total_price" id="D" style="display: none">
 			
-					<br>                           
-					<button class="btn btn-green btn-lg" type="submit">SUBMIT QUOTE</button>
-				</div>					
-					<div style="margin-top:20px">
-						<script src="https://www.recaptcha.net/recaptcha/api.js" async="" defer=""></script>
-<div data-sitekey="6Lecl8AUAAAAAAIMxRl-QuqUtyNmqILz-Bayy5a-" class="g-recaptcha "><div style="width: 304px; height: 78px;" data-children-count="1"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lecl8AUAAAAAAIMxRl-QuqUtyNmqILz-Bayy5a-&amp;co=aHR0cDovL3d3dy5yb2NrZXRlbGV2YXRvcnNtaHIueHl6Ojgw&amp;hl=en&amp;v=TYDIjJAqCk6g335bFk3AjlC3&amp;size=normal&amp;cb=cbc2hvfrrv" width="304" height="78" role="presentation" name="a-q1dj9hs2tgkh" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" data-children-count="0"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
-  <noscript>
-	<div>
-	  <div style="width: 302px; height: 422px; position: relative;">
-		<div style="width: 302px; height: 422px; position: absolute;">
-		  <iframe
-			src="https://www.recaptcha.net/recaptcha/api/fallback?k=6Lecl8AUAAAAAAIMxRl-QuqUtyNmqILz-Bayy5a-"
-			name="ReCAPTCHA"
-			style="width: 302px; height: 422px; border-style: none; border: 0; overflow: hidden;">
-		  </iframe>
-		</div>
-	  </div>
-	  <div style="width: 300px; height: 60px; border-style: none;
-		bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px;
-		background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
-		<textarea id="g-recaptcha-response" name="g-recaptcha-response"
-		  class="g-recaptcha-response"
-		  style="width: 250px; height: 40px; border: 1px solid #c1c1c1;
-		  margin: 10px 25px; padding: 0px; resize: none;">
-		</textarea>
-	  </div>
-	</div>
-  </noscript>
-
-					</div>
-				   
-					
-
-				</section>
 	
-				<!-- /form -->
-			</form>
 
+				
+					
 					
 			<!-- FOOTER -->
 			<footer id="footer">
@@ -719,6 +522,7 @@
 		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
 
 		<script src="assets/js/scripts.js"></script>
+		<script src="assets/js/form-rocket-elevators.quote.js"></script>
 		
 		<!-- STYLESWITCHER - REMOVE -->
 		<script async src="demo_files/styleswitcher/styleswitcher.js"></script>

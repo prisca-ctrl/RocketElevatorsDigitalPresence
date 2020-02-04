@@ -53,8 +53,9 @@ height: 117px;
 
 div.formulaire
    {
-   padding-top:60px;
+   padding-top:25px;
    padding: right 10px;;
+   padding-bottom: 25px;
    margin-bottom:60px;
    border: #0e0000;
    margin-right: 75px;
@@ -64,4 +65,13 @@ div.formulaire
 {
    border-bottom-style: dotted;
    border-top-style: dotted;
+}
+
+select.first 
+{
+   border: 2px solid #E5E7E9;
+	height: 56px;
+	padding: 12px;
+	outline: darkblue;
+	
 }
