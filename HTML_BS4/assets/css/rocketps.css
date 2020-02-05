@@ -65,3 +65,15 @@ div.formulaire
    border-bottom-style: dotted;
    border-top-style: dotted;
 }
+
+.fieldset-auto-width{
+   display: inline-block;
+}
+#selecBuil{
+   height: 56px;
+   width: 452px;
+   border-radius: 36px ;
+}
+#selecBuil{
+   
+}

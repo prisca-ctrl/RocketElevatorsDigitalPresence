@@ -297,27 +297,26 @@
 									</div>
 							</div>
 				
-							<div id="formfirst" class="formulaire" class="container-fluid" >
-							<div class="header-title content-bordered">
-								<p>	
-									<h3>Building info</h3>
-								</p>
-							</div>
-							<!-- choose type of building -->
-					<div class="row">
-							<div class="col-md-6" class="header-title content-bordered">
-						<div class="chooseType">
-						<label class="labelStyle">Type of Building</label>
-						<select class="ansStyle" onchange="showHide()" id="buildingType" name="Type_of_building">
-							<option value="">---- Type ----</option>
-							<option value="residential">Residential</option>
-							<option value="commercial">Commercial</option>
-							<option value="corporate">Corporate</option>
-							<option value="hybride">Hybride</option>
+			</fieldset>			
+			</form>
+
+			<form id="phaseOne" action="php/contact.php" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="CMa8MsST6osfd1F2PsBrfRai+A8hi0u6uaETAZP9FQgkhuE9hDEK3bX0J1urrN/pFrr36xp6Aiilwu/BzV2msA==">
+				<fieldset class="fieldset-auto-width">
+					<!-- choose type of building -->
+					<div class="row-fluid">
+						<label for="buildingType">Type of Building</label>
+						<select id="selecBuil" name="Type_of_building">
+							<option value="">----------Please select your building type -------------</option>
+							<option value="residential"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Residential</option>
+							<option value="commercial">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Commercial</option>
+							<option value="corporate">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Corporate</option>
+							<option value="hybride">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hybride</option>
 						</select>
-						</div>
+					</div>
+					<!-- /choose type of building -->
+			</form>
 							
-					<!-- if residential -->
+					<!-- if residential 
 					<div class="showHidden" id="res1" style="display: block;"> 
 						<div class="askStyle" data-children-count="1">
 							<label class="labelStyle">How many apartments?</label>
@@ -335,8 +334,8 @@
 						</div>
 					</div>
 					</div>  
-					<!-- /if residential -->
-							<div class="row">
+					 /if residential -->
+					<div class="row">
 
 					</div>
 					
@@ -377,23 +376,6 @@
 				
 				<!-- /INFO -->
 			</div>  
-			<form class="new_quote" id="new_quote" action="/quotes" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="CMa8MsST6osfd1F2PsBrfRai+A8hi0u6uaETAZP9FQgkhuE9hDEK3bX0J1urrN/pFrr36xp6Aiilwu/BzV2msA==">
-
-					<!-- choose type of building -->
-					<div class="chooseType">
-						<label class="labelStyle">Type of Building</label>
-
-						<select class="ansStyle" onchange="showHide()" id="buildingType" name="Type_of_building">
-							<option value="">---- Type ----</option>
-							<option value="residential">residential</option>
-							<option value="commercial">commercial</option>
-							<option value="corporate">corporate</option>
-							<option value="hybride">hybride</option>
-						</select>
-					
-					<!-- /choose type of building -->
-
-				</div>
 					<!-- if commercial -->
 					<div class="showHidden" id="com1" style="display: none;"> 
 						<div class="askStyle" data-children-count="1">
