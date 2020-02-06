@@ -34,6 +34,7 @@
 $(function () {
     $("#res1").hide();
     $("#selecBuil").change(selecType);
+    $("#calculateLiftCages").click(calculateLiftCages);
 });
 
 function selecType(){
@@ -41,4 +42,11 @@ function selecType(){
         $("#res1").show();
         
     }
+}
+
+
+function calculateLiftCages(params) {
+   if( $("#selecBuil").val() == "residential" ){
+
+   }
 }
