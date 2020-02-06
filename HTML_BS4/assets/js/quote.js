@@ -31,6 +31,7 @@
 // });
 
 
+
 $(function () {
     $("#res1").hide();
     $("#selecBuil").change(selecType);
@@ -47,6 +48,11 @@ function selecType(){
 
 function calculateLiftCages(params) {
    if( $("#selecBuil").val() == "residential" ){
-
+    var apartmentNumber =  $("#selecBuil").val();
+    var resFloorNumber = $("#selecBuil").val();
+    var UndergroundNumber = $("#selecBuil").val();
+    var numberOfCages = apartmentNumber / (resFloorNumber - UndergroundNumber);
+alert("numberOfCages");
    }
 }
+
