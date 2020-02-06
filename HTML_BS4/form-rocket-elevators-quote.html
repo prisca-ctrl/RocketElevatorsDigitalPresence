@@ -296,10 +296,10 @@
 										<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
 									</div>
 							</div>
-				
+														<!--QUOTE INFOS-->
+
 			</fieldset>			
 			</form>
-										<!--QUOTE INFOS-->
 			<form id="selectBuilding" action="php/contact.php" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="CMa8MsST6osfd1F2PsBrfRai+A8hi0u6uaETAZP9FQgkhuE9hDEK3bX0J1urrN/pFrr36xp6Aiilwu/BzV2msA==">
 				<!-- choose type of building -->
 				<fieldset class="fieldset-auto-width">
@@ -316,44 +316,50 @@
 				</fieldset>
 															<!-- /choose type of building -->
 				<!---RESIDENTIAL BUILDING INFOS-->
-<fieldset>							
-	<div id="residential" class="row col-sm-4"> 
-				
-				<div>
-					<label for=" numberOfAppartement">How many apartments?</label>
-					<input id="resApartmentNumber" name="ResidentialApartmentNumber" type="number" placeholder=" Number of appartements" >
-
-				<div >
-					<label for="numberOfFloor">How many floors?</label>
-					<input id="resFloorNumber" name="residentialFloorNumber" type="number" placeholder= "Number of floors"> 
-				</div>
-
-				<div>
-					<label for="numberOfBasement">How many basements?</label>
-					<input id="resBasementNumber" name="residentialBasemenentNumber" type="number" placeholder="number of Basement"> 
-				</div>
-			</div>
-	</div>
-</fieldset>
-				<input id="calculateLiftCages" type="button" value="calculate"></input>
+				<fieldset>
+					<div id="residential" class="row col-sm-4">
+						<div>
+						  <label for=" numberOfAppartement">How many apartments?</label>
+						  <input id="resApartmentNumber" name="ResidentialApartmentNumber" type="number" placeholder=" Number of appartements">
+					   </div>
+						<div>
+						  <label for="numberOfFloor">How many floors?</label>
+						  <input id="resFloorNumber" name="residentialFloorNumber" type="number" placeholder="Number of floors">
+						</div>
+						<div>
+						  <label for="numberOfBasement">How many basements?</label>
+						  <input id="resBasementNumber" name="residentialBasemenentNumber" type="number" placeholder="number of Basement">
+						</div>
+					  </div>
+					</div>
+				  </fieldset>
+								  <input id="calculateLiftCages" type="button" value="calculate"></input>
 			<!---RESIDENTIAL BUILDING INFOS-->
 			
 			<!---COMMERCIAL BUILDING INFOS-->
 <fieldset>		
-	<div id="residential" class="row col-sm-4"> 
+	<div id="commercial" class="row col-sm-4"> 
 				
 		<div>
-			<label for=" numberOfAppartement">How many apartments?</label>
-			<input id="resApartmentNumber" name="ResidentialApartmentNumber" type="number" placeholder=" Number of appartements" >
+			<label for=" numberOfDistinctBussiness"> How many distinct bussiness in the building?</label>
+			<input id="comBussinessNumber" name="DistinctBussinessNumber" type="number" placeholder=" Number of distinct bussiness" >
 
 		<div >
 			<label for="numberOfFloor">How many floors?</label>
-			<input id="resFloorNumber" name="residentialFloorNumber" type="number" placeholder= "Number of floors"> 
+			<input id="comFloorNumber" name="commercialFloorNumber" type="number" placeholder= "Number of floors"> 
 		</div>
 
 		<div>
 			<label for="numberOfBasement">How many basements?</label>
-			<input id="resBasementNumber" name="residentialBasemenentNumber" type="number" placeholder="number of Basement"> 
+			<input id="comBasementNumber" name="commercialBasemenentNumber" type="number" placeholder="number of Basement"> 
+		</div>
+		<div>
+			<label for="numberOfParking">How many available parking spaces?</label>
+			<input id="parkingSpacesNumber" name="commercialparkingSpacesNumber" type="number" placeholder="sNumber of available parking spaces"> 
+		</div>
+		<div>
+			<label for="numberOfElevatorsCagesAsked">How many elevators Cages to be deployed?</label>
+			<input id="numberOfElevatorsCagesAsked" name="commercialElevatorCages" type="number" placeholder="number of elevators cages"> 
 		</div>
 	</div>
 </div>
@@ -363,20 +369,28 @@
 		
 <!---CORPORATE BUILDING INFOS-->
 <fieldset>		
-	<div id="residential" class="row col-sm-4"> 
+	<div id="corporate" class="row col-sm-4"> 
 				
 		<div>
-			<label for=" numberOfAppartement">How many apartments?</label>
-			<input id="resApartmentNumber" name="ResidentialApartmentNumber" type="number" placeholder=" Number of appartements" >
+			<label for=" numberOfseparateTenants">How many apartments?</label>
+			<input id="corpSeparateTenants" name="separateTenantsNumber" type="number" placeholder=" Number of separate tenants" >
 
 		<div >
 			<label for="numberOfFloor">How many floors?</label>
-			<input id="resFloorNumber" name="residentialFloorNumber" type="number" placeholder= "Number of floors"> 
+			<input id="corpFloorNumber" name="corporateFloorNumber" type="number" placeholder= "Number of floors"> 
 		</div>
 
 		<div>
 			<label for="numberOfBasement">How many basements?</label>
-			<input id="resBasementNumber" name="residentialBasemenentNumber" type="number" placeholder="number of Basement"> 
+			<input id="corpBasementNumber" name="corpBasemenentNumber" type="number" placeholder="number of Basement"> 
+		</div>
+		<div>
+			<label for="numberOfParking">How many available parking spaces?</label>
+			<input id="parkingSpacesNumber" name="commercialparkingSpacesNumber" type="number" placeholder="Number of available parking spaces"> 
+		</div>
+		<div>
+			<label for="maximumnumberOfOccupantPerFloor"> What is the maximun number of occupant per floor?</label>
+			<input id="corpMaxOccupantNumberPerFloorr" name="maxNumOfOccupantPerFloor" type="number" placeholder="maximum Number Of Occupant Per Floor"> 
 		</div>
 	</div>
 </div>
@@ -385,36 +399,60 @@
 
 <!---HYBRIDE BUILDING INFOS-->
 <fieldset>		
-	<div id="residential" class="row col-sm-4"> 
+	<div id="hybride" class="row col-sm-4"> 
 				
 		<div>
-			<label for=" numberOfAppartement">How many apartments?</label>
-			<input id="resApartmentNumber" name="ResidentialApartmentNumber" type="number" placeholder=" Number of appartements" >
+			<label for=" numberOfDistinctBussiness"> How many distinct bussiness in the building?</label>
+			<input id="hybBussinessNumber" name="DistinctBussinessNumber" type="number" placeholder=" Number of distinct bussiness" >
 
 		<div >
 			<label for="numberOfFloor">How many floors?</label>
-			<input id="resFloorNumber" name="residentialFloorNumber" type="number" placeholder= "Number of floors"> 
+			<input id="corpFloorNumber" name="hybrideFloorNumber" type="number" placeholder= "Number of floors"> 
 		</div>
 
 		<div>
 			<label for="numberOfBasement">How many basements?</label>
-			<input id="resBasementNumber" name="residentialBasemenentNumber" type="number" placeholder="number of Basement"> 
+			<input id="hybBasementNumber" name="hybridelBasemenentNumber" type="number" placeholder="number of Basement"> 
 		</div>
-	</div>
+		<div>
+			<label for="numberOfParking">How many available parking spaces?</label>
+			<input id="hybparkingSpacesNumber" name="hybrideparkingSpacesNumber" type="number" placeholder="Number of available parking spaces"> 
+		</div>
+		<div>
+			<label for="maximumnumberOfOccupantPerFloor"> What is the maximun number of occupant per floor?</label>
+			<input id="hybMaxOccupantNumberPerFloorr" name="maxNumOfOccupantPerFloor" type="number" placeholder="maximum Number Of Occupant Per Floor"> 
+		</div>
+		<div>
+			<label for="numberOfActivityHour"> What is the maximun number of activity hour per day?</label>
+			<input id="hybActivityHourNumber" name="hybActivityHourNumber" type="number" placeholder="Number Of activity hour"  maxlength = "24"> 
+		</div>
 </div>
 </fieldset>
 <!---HYBRIDE BUILDING INFOS-->
-			
+		<!--Product Line-->		
+<fieldset>
+	<div id="productLineType">
+	  <h3> Product Lines </h3>
+	  <p>Select the desired product line </p>
+	  <div class="control">
+		<label class="radio">
+		  <input type="radio" name="standard">
+		  Standard
+		</label>
+		<label class="radio">
+		  <input type="radio" name="prenium">
+		  Premium
+		</label>
+		<label class="radio" disabled>
+		  <input type="radio" name="excelium">
+		  Excelium
+		</label>
+	  </div>
+  </fieldset>
+  <!--Product Line-->
+  
 										<!--QUOTE INFOS-->
 
-					<div class="row">
-
-					</div>
-					
-					
-				</div>
-			</div>	
-				<!-- /FORM -->
 
 			 
 				<!-- INFO
@@ -447,96 +485,8 @@
 					</p> -->
 				
 				<!-- /INFO -->
+				
 			</div>  
-					<!-- if commercial -->
-					<div class="showHidden" id="com1" style="display: none;"> 
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many stores?</label>
-							<input name="Commercial_store_number" class="ansStyle" type="number" placeholder="Stores Number"><br>
-						</div>
-
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many floors?</label>
-							<input name="Commercial_floor_number" class="ansStyle" type="number" placeholder="Floors Number"><br>
-						</div>
-
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many undergrounds?</label>
-							<input name="Commercial_underground_number" class="ansStyle" type="number" placeholder="Undergrounds Number"><br>
-						</div>
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many elevator cages?</label>
-							<input name="Commercial_elevCage_number" class="ansStyle" type="number" placeholder="Cage Number" id="comElevCageNumber" onkeyup="calcCageNumber(); quoteMake()"><br>
-						</div>
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many parking places?</label>
-							<input name="Commercial_parkPlace_number" class="ansStyle" type="number" placeholder="Parking Places"><br>
-						</div>
-
-					</div> 
-					<!-- /if commercial -->
-
-					<!-- if corporate -->
-					<div class="showHidden" id="corp1" style="display: none;"> 
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many separate tenant companies?</label>
-							<input name="Corporate_companie_number" class="ansStyle" type="number" placeholder="Companies Number"><br>
-						</div>
-
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many floors?</label>
-							<input name="Corporate_floor_number" class="ansStyle" type="number" placeholder="Floors Number" id="corFloorNumber" onkeyup="calcCageNumber(); quoteMake()"><br>
-						</div>
-
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many undergrounds?</label>
-							<input name="Corporate_underground_number" class="ansStyle" type="number" placeholder="Undergrounds Number" id="corUndergrNumber" onkeyup="calcCageNumber(); quoteMake()"><br>
-						</div>
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many parking places?</label>
-							<input name="Corporate_parkPlace_number" class="ansStyle" type="number" placeholder="Parking Places"><br>
-						</div>
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many occupants per floor?</label>
-							<input name="Corporate_OccPerFloor_number" class="ansStyle" type="number" placeholder="Occupants Per Floor" id="corOccPerFloorNumber" onkeyup="calcCageNumber(); quoteMake()" data-kwimpalastatus="alive" data-kwimpalaid="1580525515199-3"><br>
-						</div>
-
-					</div> 
-					<!-- /if corporate -->
-				</div>
-					<!-- if hybrid -->
-					<div class="showHidden" id="hyb1" style="display: none;"> 
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many stores?</label>
-							<input name="Hybrid_store_number" class="ansStyle" type="number" placeholder="Stores Number"><br>
-						</div>
-
-						<div class="askStyle" data-children-count="1">                                    
-							<label class="labelStyle">How many floors?</label>
-							<input name="Hybrid_floor_number" class="ansStyle" type="number" placeholder="Floors Number" id="hybFloorNumber" onkeyup="calcCageNumber(); quoteMake()"><br>
-						</div>
-
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many undergrounds?</label>
-							<input name="Hybrid_underground_number" class="ansStyle" type="number" placeholder="Undergrounds Number" id="hybUndergrNumber" onkeyup="calcCageNumber(); quoteMake()"><br>
-						</div>
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many parking places?</label>
-							<input name="Hybrid_parkPlace_number" class="ansStyle" type="number" placeholder="Parking Places"><br>
-						</div>
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many occupants per floor?</label>
-							<input name="Hybrid_OccPerFloor_number" class="ansStyle" type="number" placeholder="Occupants Per Floor" id="hybOccPerFloorNumber" onkeyup="calcCageNumber(); quoteMake()" data-kwimpalastatus="alive" data-kwimpalaid="1580525515199-4"><br>
-						</div>
-						<div class="askStyle" data-children-count="1">
-							<label class="labelStyle">How many hours per day of activity?</label>
-							<input name="Hybrid_hourAct_number" class="ansStyle" type="number" placeholder="Open hours" id="hoursOfActivity" onkeyup="correctHour()"><br>
-						</div>    
-
-					</div> 
-					<!-- /if hybrid -->
-
-					
 					<div id="estCageNumber" class="divSize"> 
 						<div class="askStyle">
 							<label class="labelStyle">The estimate cage number is :</label>
