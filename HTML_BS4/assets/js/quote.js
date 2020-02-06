@@ -33,25 +33,25 @@
 
 
 $(function () {
-    $("#res1").hide();
-    $("#selecBuil").change(selecType);
+    $("#residential").hide();
+    $("#selectBuiling").change(selecType);
     $("#calculateLiftCages").click(calculateLiftCages);
 });
 
 function selecType(){
-    if ($("#selecBuil").val() =="residential") {
-        $("#res1").show();
+    if ($("#selectBuiling").val() =="residential") {
+        $("#residential").show(); 
         
     }
 }
 
 
 function calculateLiftCages(params) {
-   if( $("#selecBuil").val() == "residential" ){
-    var apartmentNumber =  $("#apartmentNumber").val();
+   if( $("#selectBuiling").val() == "residential" ){
+    var resApartmentNumber =  $("#resApartmentNumber").val();
     var resFloorNumber = $("#resFloorNumber").val();
-    var UndergroundNumber = $("#UndergroundNumber").val();
-    var numberOfCages = apartmentNumber / (resFloorNumber - UndergroundNumber);
+    var resBasementNumber = $("#resBasementNumber").val();
+    var numberOfCages = resApartmentNumber / (resFloorNumber - resBasementNumber);
     alert("numberOfCages = "+ numberOfCages);
    }
 }
