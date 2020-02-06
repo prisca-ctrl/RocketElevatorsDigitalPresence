@@ -48,11 +48,11 @@ function selecType(){
 
 function calculateLiftCages(params) {
    if( $("#selecBuil").val() == "residential" ){
-    var apartmentNumber =  $("#selecBuil").val();
-    var resFloorNumber = $("#selecBuil").val();
-    var UndergroundNumber = $("#selecBuil").val();
+    var apartmentNumber =  $("#apartmentNumber").val();
+    var resFloorNumber = $("#resFloorNumber").val();
+    var UndergroundNumber = $("#UndergroundNumber").val();
     var numberOfCages = apartmentNumber / (resFloorNumber - UndergroundNumber);
-alert("numberOfCages");
+    alert("numberOfCages = "+ numberOfCages);
    }
 }
 
