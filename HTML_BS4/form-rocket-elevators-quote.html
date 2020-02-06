@@ -271,7 +271,7 @@
 							<h3>Please fill with your informations and we will send you a quote</h3>
 							</p>
 					</div>
-					<form action="php/contact.php" method="post" enctype="multipart/form-data">
+		<form action="php/contact.php" method="post" enctype="multipart/form-data">
 			
 			<fieldset>
 							<input type="hidden" name="action" value="contact_send" />
@@ -314,12 +314,16 @@
 						</select>
 					</div>
 					<!-- /choose type of building -->
-			</form>
-							
-					<!-- if residential 
+			
+			
+					<fieldset>		
+					 
 					<div class="showHidden" id="res1" style="display: block;"> 
+						
 						<div class="askStyle" data-children-count="1">
+							
 							<label class="labelStyle">How many apartments?</label>
+							
 							<input name="Residential_apartment_number" class="ansStyle" type="number" placeholder="Apartments Number" id="apartmentNumber" onkeyup="calcCageNumber(); quoteMake()" data-kwimpalastatus="alive" data-kwimpalaid="1580525515199-2"><br>
 						</div>
 
@@ -333,8 +337,8 @@
 							<input name="Residential_underground_number" class="ansStyle" type="number" placeholder="Undergrounds Number"><br>
 						</div>
 					</div>
-					</div>  
-					 /if residential -->
+		  			</fieldset>
+
 					<div class="row">
 
 					</div>
@@ -712,6 +716,8 @@
 
 		<!-- PAGELEVEL SCRIPTS -->
 		<script src="assets/js/contact.js"></script>
+		<script src="assets/js/quote.js"></script>
+
 
 		<!-- 
 			GMAP.JS 
