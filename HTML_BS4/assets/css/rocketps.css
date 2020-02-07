@@ -54,7 +54,7 @@ height: 117px;
 div.formulaire
    {
    padding-top:60px;
-   padding: right 10px;;
+   padding: right 40px;;
    margin-bottom:60px;
    border: #0e0000;
    margin-right: 75px;
@@ -76,4 +76,12 @@ div.formulaire
 }
 #selecBuil{
    
+}
+
+.fieldset{
+   fieldset{
+      border: 1px solid rgb(255,232,57);
+      width: 400px;
+      margin:auto;
+    }
 }

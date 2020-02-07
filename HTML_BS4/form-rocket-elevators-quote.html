@@ -29,686 +29,380 @@
 		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/color_scheme/yellow.css" rel="stylesheet" type="text/css" id="color_scheme" />
 	</head>
-
-	<!--
-		AVAILABLE BODY CLASSES:
-		
-		smoothscroll 			= create a browser smooth scroll
-		enable-animation		= enable WOW animations
-
-		bg-grey					= grey background
-		grain-grey				= grey grain background
-		grain-blue				= blue grain background
-		grain-green				= green grain background
-		grain-blue				= blue grain background
-		grain-orange			= orange grain background
-		grain-yellow			= yellow grain background
-		
-		boxed 					= boxed layout
-		pattern1 ... patern11	= pattern background
-		menu-vertical-hide		= hidden, open on click
-		
-		BACKGROUND IMAGE [together with .boxed class]
-		data-background="assets/images/_smarty/boxed_background/1.jpg"
-	-->
 	<body class="smoothscroll enable-animation grain-blue menu-vertical-hide pattern2">
-
+		
 		<!-- SLIDE TOP -->
 		<div id="slidetop">
-
 			<div class="container">
-				
-				<div class="row">
-
-					<div class="col-md-4">
-						<h6><i class="icon-heart"></i> WHY ROCKET ELEVATORS?</h6>
-						<p> Rocket Elevators , feel always safe. Arrive on time, travel with elegance! </p>
-					</div>
-
-					<div class="col-md-4">
-						<h6><i class="fa-facheck"></i> RECENTLY VISITED</h6>
-						<ul class="list-unstyled">
-							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet</a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> This is a very long text, very very very very very very very very very very very very </a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> Lorem ipsum dolor sit amet</a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> Dolor sit amet,consectetur adipiscing elit amet</a></li>
-							<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet,consectetur adipiscing elit</a></li>
-						</ul>
-					</div>
-
-					<div class="col-md-4">
-						<h6><i class="icon-envelope"></i> CONTACT INFO</h6>
-						<ul class="list-unstyled">
-							<li><b>Address:</b> 4468 Rue Wellington, Suite 204 <br /> Verdun, Québec, H4G 1W5</li>
-							<li><b>Phone:</b> 1-581-701-0303</li>
-							<li><b>Email:</b> <a href="mailto:support@rocketelevators.com">support@rocketelevators.com</a></li>
-						</ul>
-					</div>
-
+			  <div class="row">
+				<div class="col-md-4">
+				  <h6><i class="icon-heart"></i> WHY ROCKET ELEVATORS?</h6>
+				  <p> Rocket Elevators, feel always safe going up!</p>
 				</div>
-
+				<div class="col-md-4">
+				  <h6><i class="icon-envelope"></i> CONTACT INFO</h6>
+				  <ul class="list-unstyled">
+					<li><b>Address:</b> 4468 Rue Wellington, Suite 204 <br /> Verdun, Québec, H4G 1W5</li>
+					<li><b>Phone:</b> 1-581-701-0303</li>
+					<li><b>Email:</b> <a href="mailto:support@rocketelevators.com">support@rocketelevators.com</a></li>
+				  </ul>
+				</div>
+			  </div>
 			</div>
+	  
 
 			<a class="slidetop-toggle" href="#"><!-- toggle button --></a>
 
 		</div>
 		<!-- /SLIDE TOP -->
 
-
 		<!-- wrapper -->
 		<div id="wrapper">
-
-			<!-- 
-				AVAILABLE HEADER CLASSES
-
-				Default nav height: 96px
-				.header-md 		= 70px nav height
-				.header-sm 		= 60px nav height
-
-				.b-0 		= remove bottom border (only with transparent use)
-				.transparent	= transparent header
-				.translucent	= translucent header
-				.sticky			= sticky header
-				.static			= static header
-				.dark			= dark header
-				.bottom			= header on bottom
-				
-				shadow-before-1 = shadow 1 header top
-				shadow-after-1 	= shadow 1 header bottom
-				shadow-before-2 = shadow 2 header top
-				shadow-after-2 	= shadow 2 header bottom
-				shadow-before-3 = shadow 3 header top
-				shadow-after-3 	= shadow 3 header bottom
-
-				.clearfix		= required for mobile menu, do not remove!
-
-				Example Usage:  class="clearfix sticky header-sm transparent b-0"
-			-->
 			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
-
-				<!-- TOP NAV -->
-				<header id="topNav">
-					<div class="container">
-
-						<!-- Mobile Menu Button -->
-						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
-							<i class="fa fa-bars"></i>
-						</button>
-
-						<!-- Logo -->
-						<a class="logo float-left scrollTo" href="#top">
-							<img src=".\imgrocket\R2.png" alt=" Rocket Elevator's logo" />
-						</a>
-
-						<!-- 
-							Top Nav 
-							
-							AVAILABLE CLASSES:
-							submenu-dark = dark sub menu
-						-->
-						 <div class="navbar-collapse collapse nav-main-collapse submenu-dark"> 
-							<nav class="nav-main">
-
-								<!-- 
-									.nav-onepage
-									Required for onepage navigation links
-									
-									Add .external for an external link!
-								-->
-								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
-									<li class="active"><!-- HOME -->
-										<a href="#">
-											HOME
-										</a>
-										
-									</li>
-									
-									<!-- SERVICES -->
-									<li class="dropdown">
-										<a class="dropdown-toggle" href="#services">
-											SERVICES
-										</a>
-										<ul class="dropdown-menu">
-											<li><a href="rocket-elevator-corporate-services.html">CORPORATE SERVICES</a></li>
-											<li><a href="rocket-elevator-residential-services.html">RESIDENTIAL SERVICES</a></li>
-										</ul>
-									</li>
-									<li><!-- WORK -->
-										<a href="#portfolio">
-											PORTFOLIO
-										</a>
-									</li>
-									<li><!-- NEWS -->
-										<a href="#news">
-											NEWS
-										</a>
-									</li>
-								
-									<li><!-- CLIENTS -->
-										<a href="#clients">
-											CLIENTS
-										</a>
-									</li>
-									
-									
-									<li><!-- CONTACT -->
-										<a href="#contact">
-											CONTACT
-										</a>
-									</li>
-								</ul>
-
-							</nav>
-						</div>
-
-					</div>
-				</header>
-				<!-- /Top Nav -->
-
+			  <!-- TOP NAV -->
+			  <header id="topNav">
+				<div class="container">
+				  <!-- Mobile Menu Button -->
+				  <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+					<i class="fa fa-bars"></i>
+				  </button>
+				  <!-- Logo -->
+				  <a class="logo float-left scrollTo" href="#top">
+					<img src=".\imgrocket\R2.png" alt=" Rocket Elevator's logo" />
+				  </a>
+				  <div class="navbar-collapse collapse nav-main-collapse submenu-dark">
+					<nav class="nav-main">
+					  <ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+						<li class="active">
+						  <!-- HOME -->
+						  <a href="#">
+							HOME
+						  </a>
+						</li>
+						<!-- SERVICES -->
+						<li class="dropdown">
+						  <a class="dropdown-toggle" href="#services">
+							SERVICES
+						  </a>
+						  <ul class="dropdown-menu">
+							<li><a href="rocket-elevator-corporate-services.html">CORPORATE SERVICES</a></li>
+							<li><a href="rocket-elevator-residential-services.html">RESIDENTIAL SERVICES</a></li>
+						  </ul>
+						</li>
+						<li>
+						  <!-- WORK -->
+						  <a href="#portfolio">
+							PORTFOLIO
+						  </a>
+						</li>
+						<li>
+						  <!-- NEWS -->
+						  <a href="#news">
+							NEWS
+						  </a>
+						</li>
+						<li>
+						  <!-- CLIENTS -->
+						  <a href="#clients">
+							CLIENTS
+						  </a>
+						</li>
+						<li>
+						  <!-- CONTACT -->
+						  <a href="#contact">
+							CONTACT
+						  </a>
+						</li>
+					  </ul>
+					</nav>
+				  </div>
+				</div>
+			  </header>
+		  
+			  <!-- /Top Nav -->
+		  
 			</div>
-			<!-- 
-			
-						FOMRULAIRE CONTACT
-			
-			 <div class="row">
+			<!---Alert Success -->
+			<div id="alert_success" class="alert alert-success mb-30">
+			  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			  <strong>Thank You!</strong> Your message successfully sent!
+			</div><!-- /Alert Success -->
+		  
+			<!-- Alert Failed -->
+			<div id="alert_failed" class="alert alert-danger mb-30">
+			  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			  <strong>[SMTP] Error!</strong> Internal server error!
+			</div><!-- /Alert Failed -->
+		  
+			<!-- Alert Mandatory -->
+			<div id="alert_mandatory" class="alert alert-danger mb-30">
+			  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			  <strong>Sorry!</strong> You need to complete all mandatory (*) fields!
+			</div><!-- /Alert Mandatory -->
+		</div>
+		  <!-- /wrapper -->
 
-				 FORM 
-				<div class="col-md-8 col-sm-8">
-
-					<h3>For feedback or other inquiries please select the general inquiries button. <strong><em></em></strong></h3>
-
-					
-					<!--
-						MESSAGES
-						
-							How it works?
-							The form data is posted to php/contact.php where the fields are verified!
-							php.contact.php will redirect back here and will add a hash to the end of the URL:
-								#alert_success 		= email sent
-								#alert_failed		= email not sent - internal server error (404 error or SMTP problem)
-								#alert_mandatory	= email not sent - required fields empty
-								Hashes are handled by assets/js/contact.js
-
-							Form data: required to be an array. Example:
-								contact[email][required]  WHERE: [email] = field name, [required] = only if this field is required (PHP will check this)
-								Also, add `required` to input fields if is a mandatory field. 
-								Example: <input required type="email" value="" class="form-control" name="contact[email][required]">
-
-							PLEASE NOTE: IF YOU WANT TO ADD OR REMOVE FIELDS (EXCEPT CAPTCHA), JUST EDIT THE HTML CODE, NO NEED TO EDIT php/contact.php or javascript
-										 ALL FIELDS ARE DETECTED DINAMICALY BY THE PHP
-
-							WARNING! Do not change the `email` and `name`!
-										contact[name][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
-										contact[email][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
-					-->
-
-					<!-- Alert Success -->
-					<div id="alert_success" class="alert alert-success mb-30">
-						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-						<strong>Thank You!</strong> Your message successfully sent!
-					</div><!-- /Alert Success -->
-
-
-					<!-- Alert Failed -->
-					<div id="alert_failed" class="alert alert-danger mb-30">
-						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-						<strong>[SMTP] Error!</strong> Internal server error!
-					</div><!-- /Alert Failed -->
-
-
-					<!-- Alert Mandatory -->
-					<div id="alert_mandatory" class="alert alert-danger mb-30">
-						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-						<strong>Sorry!</strong> You need to complete all mandatory (*) fields!
-					</div><!-- /Alert Mandatory -->
-			
-			
-			
-				<div class="formulaire" class="container">
-					<div class="heading-title heading-dotted text-center">
-							<p>	
-								<h2> QUOTE</h2> <br><br>
-							<h3>Please fill with your informations and we will send you a quote</h3>
-							</p>
+		  <!--FORMULAIRE COMPLET-->
+		<section id="bigForm">
+			<form action="php/contact.php" method="POST" enctype="multipart/form-data">
+				<fieldset class="box-border shadow p-40">
+				  <legend> Request a quote</legend>
+				  <input type="hidden" name="action" value="contact_send" />
+				  <div id="contactInfos" class="container-fluid form-control-lg">
+					<div>
+					  <label for="contact:name">Full Name *</label>
+					  <input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
 					</div>
-		<form action="php/contact.php" method="post" enctype="multipart/form-data">
-			
-			<fieldset>
-							<input type="hidden" name="action" value="contact_send" />
-				<div class="container-fluid">
-							<div class="row">
-									<div class="col-md-4">
-										<label for="contact:name">Full Name *</label>
-										<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
-									</div>
-									<div class="col-md-4">
-										<label for="contact:businessname">Business Name *</label>
-										<input required type="text" value="" class="form-control" name="contact[businessname][required]" id="contact:businessname">
-									</div>
-							</div>
-							<div class="row">
-									<div class="col-md-4">
-										<label for="contact:phone">Phone</label>
-										<input type="tel" value="" class="form-control" name="contact[phone]" id="contact:phone">
-									</div>
-									<div class="col-md-6">
-										<label for="contact:email">E-mail Address *</label>
-										<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
-									</div>
-							</div>
-														<!--QUOTE INFOS-->
-
-			</fieldset>			
-			</form>
-			<form id="selectBuilding" action="php/contact.php" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="CMa8MsST6osfd1F2PsBrfRai+A8hi0u6uaETAZP9FQgkhuE9hDEK3bX0J1urrN/pFrr36xp6Aiilwu/BzV2msA==">
-				<!-- choose type of building -->
-				<fieldset class="fieldset-auto-width">
-					<div class="row-fluid">
-						<label for="buildingType">Type of Building</label>
-						<select id="selectBuiling" name="Type_of_building">
-							<option value="">----------Please select your building type -------------</option>
-							<option value="residential"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Residential</option>
-							<option value="commercial">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Commercial</option>
-							<option value="corporate">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Corporate</option>
-							<option value="hybride">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hybride</option>
-						</select>
-					</div>	
-				</fieldset>
-															<!-- /choose type of building -->
-				<!---RESIDENTIAL BUILDING INFOS-->
-				<fieldset>
-					<div id="residential" class="row col-sm-4">
-						<div>
-						  <label for=" numberOfAppartement">How many apartments?</label>
-						  <input id="resApartmentNumber" name="ResidentialApartmentNumber" type="number" placeholder=" Number of appartements">
-					   </div>
-						<div>
-						  <label for="numberOfFloor">How many floors?</label>
-						  <input id="resFloorNumber" name="residentialFloorNumber" type="number" placeholder="Number of floors">
-						</div>
-						<div>
-						  <label for="numberOfBasement">How many basements?</label>
-						  <input id="resBasementNumber" name="residentialBasemenentNumber" type="number" placeholder="number of Basement">
-						</div>
+					<div class="col-md-4">
+					  <label for="contact:businessname">Business Name *</label>
+					  <input required type="text" value="" class="form-control" name="contact[businessname][required]" id="contact:businessname">
+					</div>
+					<div class="col-md-4">
+					  <label for="contact:phone">Phone</label>
+					  <input type="tel" value="" class="form-control" name="contact[phone]" id="contact:phone">
+					</div>
+					<div class="col-md-6">
+					  <label for="contact:email">E-mail Address *</label>
+					  <input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
+					</div>
+					<div class="col-md-6">
+					  <label for="contact:projectname">Project Name *</label>
+					  <input required type="text" value="" class="form-control" name="contact[projectname][required]" id="contact:projectname">
+					</div>
+				  </div>
+				  <div class="col-md-6"> <!-- choose type of building -->
+					<label for="servicesType">Type of services </label>
+					<hr>
+					<select id="selectBuilding" class="form-control pointer" name="selectBuilding">
+					  <option value="select">--- Select ---</option>
+					  <option value="residential">&nbsp;Residential</option>
+					  <option value="commercial">&nbsp;Commercial</option>
+					  <option value="corporate">&nbsp;Corporate</option>
+					  <option value="hybrid">&nbsp;Hybrid</option>
+					</select>
+				  </div>
+				  					<!---options -->
+				  <div>
+						<!---residential infos-->
+					<div id="residential" style="display: none;">
+					  <div class="form-group form-group-lg">
+						<label for=" numberOfAppartement">How many apartments?</label>
+						<input id="resApartmentNumber" class="form-control-lg" name="ResidentialApartmentNumber" type="number" placeholder=" Number of appartements">
+					  </div> <br>
+					  <div class="col-md-10">
+						<label for="numberOfFloor">How many floors?</label>
+						<input id="resFloorNumber" class="form-control-lg" name="residentialFloorNumber" type="number" placeholder="Number of floors">
+					  </div> <br>
+					  <div class="col-md-10">
+						<label for="numberOfBasement">How many basements?</label>
+						<input id="resBasementNumber" class="form-control-lg" name="residentialBasemenentNumber" type="number" placeholder="number of Basement">
 					  </div>
 					</div>
-				  </fieldset>
-								  <input id="calculateLiftCages" type="button" value="calculate"></input>
-			<!---RESIDENTIAL BUILDING INFOS-->
-			
-			<!---COMMERCIAL BUILDING INFOS-->
-<fieldset>		
-	<div id="commercial" class="row col-sm-4"> 
-				
-		<div>
-			<label for=" numberOfDistinctBussiness"> How many distinct bussiness in the building?</label>
-			<input id="comBussinessNumber" name="DistinctBussinessNumber" type="number" placeholder=" Number of distinct bussiness" >
+						<!---residential infos-->
 
-		<div >
-			<label for="numberOfFloor">How many floors?</label>
-			<input id="comFloorNumber" name="commercialFloorNumber" type="number" placeholder= "Number of floors"> 
-		</div>
-
-		<div>
-			<label for="numberOfBasement">How many basements?</label>
-			<input id="comBasementNumber" name="commercialBasemenentNumber" type="number" placeholder="number of Basement"> 
-		</div>
-		<div>
-			<label for="numberOfParking">How many available parking spaces?</label>
-			<input id="parkingSpacesNumber" name="commercialparkingSpacesNumber" type="number" placeholder="sNumber of available parking spaces"> 
-		</div>
-		<div>
-			<label for="numberOfElevatorsCagesAsked">How many elevators Cages to be deployed?</label>
-			<input id="numberOfElevatorsCagesAsked" name="commercialElevatorCages" type="number" placeholder="number of elevators cages"> 
-		</div>
-	</div>
-</div>
-
-</fieldset>
-<!---COMMERCIAL BUILDING INFOS-->
-		
-<!---CORPORATE BUILDING INFOS-->
-<fieldset>		
-	<div id="corporate" class="row col-sm-4"> 
-				
-		<div>
-			<label for=" numberOfseparateTenants">How many apartments?</label>
-			<input id="corpSeparateTenants" name="separateTenantsNumber" type="number" placeholder=" Number of separate tenants" >
-
-		<div >
-			<label for="numberOfFloor">How many floors?</label>
-			<input id="corpFloorNumber" name="corporateFloorNumber" type="number" placeholder= "Number of floors"> 
-		</div>
-
-		<div>
-			<label for="numberOfBasement">How many basements?</label>
-			<input id="corpBasementNumber" name="corpBasemenentNumber" type="number" placeholder="number of Basement"> 
-		</div>
-		<div>
-			<label for="numberOfParking">How many available parking spaces?</label>
-			<input id="parkingSpacesNumber" name="commercialparkingSpacesNumber" type="number" placeholder="Number of available parking spaces"> 
-		</div>
-		<div>
-			<label for="maximumnumberOfOccupantPerFloor"> What is the maximun number of occupant per floor?</label>
-			<input id="corpMaxOccupantNumberPerFloorr" name="maxNumOfOccupantPerFloor" type="number" placeholder="maximum Number Of Occupant Per Floor"> 
-		</div>
-	</div>
-</div>
-</fieldset>
-<!---CORPORATE BUILDING INFOS-->
-
-<!---HYBRIDE BUILDING INFOS-->
-<fieldset>		
-	<div id="hybride" class="row col-sm-4"> 
-				
-		<div>
-			<label for=" numberOfDistinctBussiness"> How many distinct bussiness in the building?</label>
-			<input id="hybBussinessNumber" name="DistinctBussinessNumber" type="number" placeholder=" Number of distinct bussiness" >
-
-		<div >
-			<label for="numberOfFloor">How many floors?</label>
-			<input id="corpFloorNumber" name="hybrideFloorNumber" type="number" placeholder= "Number of floors"> 
-		</div>
-
-		<div>
-			<label for="numberOfBasement">How many basements?</label>
-			<input id="hybBasementNumber" name="hybridelBasemenentNumber" type="number" placeholder="number of Basement"> 
-		</div>
-		<div>
-			<label for="numberOfParking">How many available parking spaces?</label>
-			<input id="hybparkingSpacesNumber" name="hybrideparkingSpacesNumber" type="number" placeholder="Number of available parking spaces"> 
-		</div>
-		<div>
-			<label for="maximumnumberOfOccupantPerFloor"> What is the maximun number of occupant per floor?</label>
-			<input id="hybMaxOccupantNumberPerFloorr" name="maxNumOfOccupantPerFloor" type="number" placeholder="maximum Number Of Occupant Per Floor"> 
-		</div>
-		<div>
-			<label for="numberOfActivityHour"> What is the maximun number of activity hour per day?</label>
-			<input id="hybActivityHourNumber" name="hybActivityHourNumber" type="number" placeholder="Number Of activity hour"  maxlength = "24"> 
-		</div>
-</div>
-</fieldset>
-<!---HYBRIDE BUILDING INFOS-->
-		<!--Product Line-->		
-<fieldset>
-	<div id="productLineType">
-	  <h3> Product Lines </h3>
-	  <p>Select the desired product line </p>
-	  <div class="control">
-		<label class="radio">
-		  <input type="radio" name="standard">
-		  Standard
-		</label>
-		<label class="radio">
-		  <input type="radio" name="prenium">
-		  Premium
-		</label>
-		<label class="radio" disabled>
-		  <input type="radio" name="excelium">
-		  Excelium
-		</label>
-	  </div>
-  </fieldset>
-  <!--Product Line-->
-  
-										<!--QUOTE INFOS-->
-
-
-			 
-				<!-- INFO
-				<div class="col-md-4 col-sm-4">
-
-					<h2>Visit Us</h2>
-
-					<!-- 
-					Available heights
-						h-100
-						h-150
-						h-200
-						h-250
-						h-300
-						h-350
-						h-400
-						h-450
-						h-500
-						h-550
-						h-600
-					-->
-					<!-- <div id="map2" class="h-400 grayscale"></div>
-
-					<hr />
-
-					<p>
-						<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 4468 Rue Wellington,Montreal</span>
-						<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:1800-555-1234">1800-555-1234</a></span>
-						<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@rocketelevators.com">mail@rocketelevators.com</a></span>
-					</p> -->
-				
-				<!-- /INFO -->
-				
-			</div>  
-					<div id="estCageNumber" class="divSize"> 
-						<div class="askStyle">
-							<label class="labelStyle">The estimate cage number is :</label>
-							<input name="Est_cage_number" class="ansStyle" type="number" id="estimateCageNumber" placeholder="Estimate Cage Number" value="" disabled=""><br>
-						</div>      
-					</div>
-					
-
-					<div class="divSize"> 
-						<div class="askStyle">
-							<label class="labelStyle">Which range of elevator cage do you need?</label>
-							<input type="radio" value="standard" name="Range" class="radioStyle0" id="stdRange" onclick="quoteMake()"><i style="color: #fff; font-weight: bold;"> STANDARD</i>
-							<input type="radio" value="premium" name="Range" class="radioStyle1" id="prmRange" onclick="quoteMake()"><i style="color: #fff; font-weight: bold;"> PREMIUM</i>
-							<input type="radio" value="excelium" name="Range" class="radioStyle1" id="excRange" onclick="quoteMake()"><i style="color: #fff; font-weight: bold;"> EXCELIUM</i>
-
-						</div>      
-					</div>
-		
-					
-					<div class="divSize"> 
-						<div class="askStyle" data-children-count="0">
-							<label class="labelStyle">Here is your quote :</label>
-							<div class="quoteStyle">
-								<label class="quoteLabelStyle">Unit Price :</label><label class="quoteLabelStyle" id="unitP"></label> <br>
-							</div>
-							<div class="quoteStyle">
-								<label class="quoteLabelStyle">Elevator Price :</label><label class="quoteLabelStyle" id="elevP"></label> <br>
-							</div>
-							<div class="quoteStyle">
-								<label class="quoteLabelStyle">Installation Cost :</label><label class="quoteLabelStyle" id="instP"></label> <br>
-							</div>
-							<div class="quoteStyle">
-								<label class="quoteLabelStyle">Total Price :</label><label class="quoteLabelStyle" id="totalP"></label><br>
-							</div>
-						</div>      
-					</div>
-
-				</fieldset>
-
-					<div class="divSize"> 
-						<div class="askStyle" data-children-count="7">
-							<label class="labelStyle">Clients information</label>
-							<div class="quoteStyle" data-children-count="7">
-								<label class="quoteLabelStyle">Your Full Name:</label>
-								<input name="Name" class="ansStyle" required="" type="text" data-kwimpalastatus="alive" data-kwimpalaid="1580525515199-6"><br>
-								<label class="quoteLabelStyle">Your Company:</label>
-								<input name="Company" class="ansStyle" required="" type="text" data-kwimpalastatus="alive" data-kwimpalaid="1580525515199-7"><br>
-								<label class="quoteLabelStyle">Email Address:</label>
-								<input name="Email" class="ansStyle" required="" type="email" data-kwimpalastatus="alive" data-kwimpalaid="1580525515199-8"><br>
-								<label class="quoteLabelStyle">Phone Number:</label>
-								<input name="Phone" class="ansStyle" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required="" type="tel" data-kwimpalastatus="alive" data-kwimpalaid="1580525515199-9"><br>
-								<label class="quoteLabelStyle">Project Name:</label>
-								<input name="Project_Name" class="ansStyle" required="" type="text" data-kwimpalastatus="alive" data-kwimpalaid="1580525515199-10"><br>
-								<label class="quoteLabelStyle">Project Description:</label>
-								<input name="Project_Description" class="ansStyle" required="" type="text"><br>
-								<label class="quoteLabelStyle">Message:</label>
-								<input name="Message" class="ansStyle" required="" type="message"><br>
-							</div>
-						
-						</div>      
-					</div>
-
-						<input name="Est_cage_number" id="E" style="display: none">                            
-						<input name="Unit_price" id="A" style="display: none">
-						<input name="Elevator_price" id="B" style="display: none">
-						<input name="Installation_cost" id="C" style="display: none">
-						<input name="Total_price" id="D" style="display: none">
-			
-					<br>                           
-					<button class="btn btn-green btn-lg" type="submit">SUBMIT QUOTE</button>
-				</div>					
-					<div style="margin-top:20px">
-						<script src="https://www.recaptcha.net/recaptcha/api.js" async="" defer=""></script>
-<div data-sitekey="6Lecl8AUAAAAAAIMxRl-QuqUtyNmqILz-Bayy5a-" class="g-recaptcha "><div style="width: 304px; height: 78px;" data-children-count="1"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lecl8AUAAAAAAIMxRl-QuqUtyNmqILz-Bayy5a-&amp;co=aHR0cDovL3d3dy5yb2NrZXRlbGV2YXRvcnNtaHIueHl6Ojgw&amp;hl=en&amp;v=TYDIjJAqCk6g335bFk3AjlC3&amp;size=normal&amp;cb=cbc2hvfrrv" width="304" height="78" role="presentation" name="a-q1dj9hs2tgkh" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" data-children-count="0"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
-  <noscript>
-	<div>
-	  <div style="width: 302px; height: 422px; position: relative;">
-		<div style="width: 302px; height: 422px; position: absolute;">
-		  <iframe
-			src="https://www.recaptcha.net/recaptcha/api/fallback?k=6Lecl8AUAAAAAAIMxRl-QuqUtyNmqILz-Bayy5a-"
-			name="ReCAPTCHA"
-			style="width: 302px; height: 422px; border-style: none; border: 0; overflow: hidden;">
-		  </iframe>
-		</div>
-	  </div>
-	  <div style="width: 300px; height: 60px; border-style: none;
-		bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px;
-		background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
-		<textarea id="g-recaptcha-response" name="g-recaptcha-response"
-		  class="g-recaptcha-response"
-		  style="width: 250px; height: 40px; border: 1px solid #c1c1c1;
-		  margin: 10px 25px; padding: 0px; resize: none;">
-		</textarea>
-	  </div>
-	</div>
-  </noscript>
-
-					</div>
-				   
-					
-
-				</section>
-	
-				<!-- /form -->
-			</form>
-
-					
-			<!-- FOOTER -->
-			<footer id="footer">
-				<div class="container">
-
-
-					<div class="row">
-
-						<!-- col #1 -->
-						<div class="col-md-8">
-
-							<h3 class="letter-spacing-1">WHY US?</h3>
-
-							<!-- Small Description -->
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat. Sed in nunc nec ligula consectetur mollis in vel justo. Vestibulum ante ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet hendrerit volutpat.
-							</p>
-							<h2>(800) 123-4567</h2>
-						
+						<!---commercial infos-->
+					<div id="commercial" class="form-group-lg" style="display: none;"> 
+						<div>
+							<label for=" numberOfDistinctBussiness"> How many distinct bussiness in the building?</label>
+							<input id="comBussinessNumber" class="form-control-lg" name="DistinctBussinessNumber" type="number" placeholder=" Number of distinct bussiness">
+						</div> <br>
+						<div>
+							<label for="numberOfFloor">How many floors?</label>
+							<input id="comFloorNumber" class="form-control-lg" name="commercialFloorNumber" type="number" placeholder="Number of floors">
+						</div> <br>
+						<div>
+							<label for="numberOfBasement">How many basements?</label>
+							<input id="comBasementNumber" class="form-control-lg" name="commercialBasemenentNumber" type="number" placeholder="number of Basement">
+						</div> <br>
+						<div>
+							<label for="numberOfParking">How many available parking spaces?</label>
+							<input id="parkingSpacesNumber" class="form-control-lg" name="commercialparkingSpacesNumber" type="number" placeholder="sNumber of available parking spaces">
+						</div> <br>
+						<div>
+							<label for="numberOfElevatorsCagesAsked">How many elevators Cages to be deployed?</label>
+							<input id="numberOfElevatorsCagesAsked" class="form-control-lg" name="commercialElevatorCages" type="number" placeholder="number of elevators cages">
 						</div>
-						<!-- /col #1 -->
+					</div>
+					  <!--commercial infos-->
 
-						<!-- col #2 -->
+					<!---corporate building infos-->
+					<div id="corporate " style="display: none;">
+						<div class="col-md-6">
+							<label for=" numberOfseparateTenants">How many apartments?</label>
+							<input id="corpSeparateTenants" class="form-control-lg" name="separateTenantsNumber" type="number" placeholder=" Number of separate tenants">
+						</div> <br>
 						<div class="col-md-4">
-							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+							<label for="numberOfFloor">How many floors?</label>
+							<input id="corpFloorNumber" class="form-control-lg" name="corporateFloorNumber" type="number" placeholder="Number of floors">
+						</div> <br>
+						<div>
+							<label for="numberOfBasement">How many basements?</label>
+							<input id="corpBasementNumber" class="form-control-lg" name="corpBasemenentNumber" type="number" placeholder="number of Basement">
+						</div> <br>	
+						<div>
+							<label for="numberOfParking">How many available parking spaces?</label>
+							<input id="parkingSpacesNumber" class="form-control-lg" name="commercialparkingSpacesNumber" type="number" placeholder="Number of available parking spaces">
+						</div> <br>
+						<div>
+							<label for="maximumnumberOfOccupantPerFloor"> What is the maximun number of occupant per floor?</label>
+							<input id="corpMaxOccupantNumberPerFloor" class="form-control-lg" name="maxNumOfOccupantPerFloor" type="number" placeholder="maximum Number Of Occupant Per Floor">
+						</div> <br>
+					</div>	  
+					<!---corporate infos-->	
 
-							<!-- Newsletter Form -->
-							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
-
-							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
-									<span class="input-group-btn">
-										<button class="btn btn-success" type="submit">Subscribe</button>
-									</span>
-								</div>
-							</form>
+					<!--hybrid infos-->
+					<div id="hybride" style="display: none;">
+						<div>
+							<label for=" numberOfDistinctBussiness"> How many distinct bussiness in the building?</label>
+							<input id="hybBussinessNumber" class="form-control-lg" name="DistinctBussinessNumber" type="number" placeholder=" Number of distinct bussiness">
+						</div> <br>
+						<div>
+							<label for="numberOfFloor">How many floors?</label>
+						 	<input id="corpFloorNumber" class="form-control-lg" name="hybrideFloorNumber" type="number" placeholder="Number of floors">
+						</div> <br>
+						<div>
+							<label for="numberOfBasement">How many basements?</label>
+							<input id="hybBasementNumber" class="form-control-lg" name="hybridelBasemenentNumber" type="number" placeholder="number of Basement">
+						</div> <br>
+						<div>
+							<label for="numberOfParking">How many available parking spaces?</label>
+							<input id="hybparkingSpacesNumber" class="form-control-lg" name="hybrideparkingSpacesNumber" type="number" placeholder="Number of available parking spaces">
+						</div> <br>
+						<div>
+							<label for="maximumnumberOfOccupantPerFloor"> What is the maximun number of occupant per floor?</label>
+							<input id="hybMaxOccupantNumberPerFloorr" class="form-control-lg" name="maxNumOfOccupantPerFloor" type="number" placeholder="maximum Number Of Occupant Per Floor">
+						</div> <br>
+						<div>
+							<label for="numberOfActivityHour"> What is the maximun number of activity hour per day?</label>
+							<input id="hybActivityHourNumber" class="form-control-lg" name="hybActivityHourNumber" type="number" placeholder="Number Of activity hour" maxlength="24">
 						</div>
-					</form>						
-							<!-- /Newsletter Form -->
-							<address>
-								<ul class="list-unstyled">
-									<li class="footer-sprite address">
-										4468<br>
-										Rue Wellington, Montreal<br>
-										H2T 3R5 2355 Canada<br>
-									</li>
-									<li class="footer-sprite phone">
-										Phone: 1-800-565-2390
-									</li>
-									<li class="footer-sprite email">
-										<a href="mailto:support@yourname.com">support@yourname.com</a>
-									</li>
-								</ul>
-							</address>
-						</div>
-						
-							<!-- Social Icons -->
-							<div class="mt-20">
-								<a href="#" class="social-icon social-icon-border social-facebook float-left" data-toggle="tooltip" data-placement="top" title="Facebook">
-
-									<i class="icon-facebook"></i>
-									<i class="icon-facebook"></i>
-								</a>
-
-								<a href="#" class="social-icon social-icon-border social-twitter float-left" data-toggle="tooltip" data-placement="top" title="Twitter">
-									<i class="icon-twitter"></i>
-									<i class="icon-twitter"></i>
-								</a>
-
-								<a href="#" class="social-icon social-icon-border social-gplus float-left" data-toggle="tooltip" data-placement="top" title="Google plus">
-									<i class="icon-gplus"></i>
-									<i class="icon-gplus"></i>
-								</a>
-
-								<a href="#" class="social-icon social-icon-border social-linkedin float-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
-									<i class="icon-linkedin"></i>
-									<i class="icon-linkedin"></i>
-								</a>
-
-								<a href="#" class="social-icon social-icon-border social-rss float-left" data-toggle="tooltip" data-placement="top" title="Rss">
-									<i class="icon-rss"></i>
-									<i class="icon-rss"></i>
-								</a>
+					</div>
+					<!--hybrid infos-->
+				  </div> <!--options-->
+				<hr>
+				  <!--Product Line choices-->
+				  <div id="productLineChoices">
+					<div class="form-group-lg">
+						<label class="labelStyle">Select the desired product line</label>
+						<input id="stdPrice" class="form-control-lg" type="radio" value="standard" name="price" class="radioStyle0" onclick="quoteMake()"><i style="color:blue; font-weight: bold;"> STANDARD</i>
+						<input id="premPrice" class="form-control-lg" type="radio" value="premium" name="price" class="radioStyle1" onclick="quoteMake()"><i style="color:blue; font-weight: bold;"> PREMIUM</i>
+						<input id="excPrice" class="form-control-lg" type="radio" value="excelium" name="price" class="radioStyle1" onclick="quoteMake()"><i style="color:blue; font-weight: bold;"> EXCELIUM</i>
+					  </div>
+				  </div>
 					
-							</div>
-							<!-- /Social Icons -->
+				
+				
+				
+				<!--QUOTE INFOS-->
+		  
+			
+				</fieldset>
+			  </form>
+		</section>
+				<!--FORMULAIRE COMPLET-->	
 
-					</div>
 
 
-				</div>
 
-				<div class="copyright">
-					<div class="container">
-						<ul class="float-right m-0 list-inline mobile-block">
-							<li><a href="#">Terms &amp; Conditions</a></li>
-							<li>&bull;</li>
-							<li><a href="#">Privacy</a></li>
-						</ul>
-						&copy; All Rights Reserved, Company LTD
-					</div>
-				</div>
 
-			</footer>
-			<!-- /FOOTER -->
 
+
+
+		 <!-- FOOTER -->
+	<footer id="footer">
+	<div class="container">
+	  <div class="row">
+		<!-- col #1 -->
+		<div class="col-md-8">
+		  <h3 class="letter-spacing-1">WHY US?</h3>
+		  <!-- Small Description -->
+		  <p>
+		  </p>
+		  <h2>(800) 123-4567</h2>
 		</div>
+		<!-- /col #1 -->
+  
+		<!-- col #2 -->
+		<div class="col-md-9 col-sm-12">
+		  <h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+  
+		  <!-- Newsletter Form -->
+		  <p>Subscribe to Our Newsletter to get Important News & Offers</p>
+  
+		  <form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+			<div class="input-group">
+			  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+			  <input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+			  <span class="input-group-btn">
+				<button class="btn btn-success" type="submit">Subscribe</button>
+			  </span>
+			</div>
+		  </form>
+		</div>
+  
+		<!-- /Newsletter Form -->
+		<address>
+		  <ul class="list-unstyled">
+			<li class="footer-sprite address">
+			  4468<br>
+			  Rue Wellington, Montreal<br>
+			  H2T 3R5 2355 Canada<br>
+			</li>
+			<li class="footer-sprite phone">
+			  Phone: 1-800-565-2390
+			</li>
+			<li class="footer-sprite email">
+			  <a href="mailto:support@yourname.com">support@yourname.com</a>
+			</li>
+		  </ul>
+		</address>
+	  </div>
+  
+	  <!-- Social Icons -->
+	  <div class="mt-20">
+		<a href="#" class="social-icon social-icon-border social-facebook float-left" data-toggle="tooltip" data-placement="top" title="Facebook">
+  
+		  <i class="icon-facebook"></i>
+		  <i class="icon-facebook"></i>
+		</a>
+  
+		<a href="#" class="social-icon social-icon-border social-twitter float-left" data-toggle="tooltip" data-placement="top" title="Twitter">
+		  <i class="icon-twitter"></i>
+		  <i class="icon-twitter"></i>
+		</a>
+  
+		<a href="#" class="social-icon social-icon-border social-gplus float-left" data-toggle="tooltip" data-placement="top" title="Google plus">
+		  <i class="icon-gplus"></i>
+		  <i class="icon-gplus"></i>
+		</a>
+  
+		<a href="#" class="social-icon social-icon-border social-linkedin float-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
+		  <i class="icon-linkedin"></i>
+		  <i class="icon-linkedin"></i>
+		</a>
+  
+		<a href="#" class="social-icon social-icon-border social-rss float-left" data-toggle="tooltip" data-placement="top" title="Rss">
+		  <i class="icon-rss"></i>
+		  <i class="icon-rss"></i>
+		</a>
+	  </div>
+	  <!-- /Social Icons -->
 	</div>
-		<!-- /wrapper -->
-
-
-		<!-- SCROLL TO TOP -->
+	<div class="copyright">
+	  <div class="container">
+		<ul class="float-right m-0 list-inline mobile-block">
+		  <li><a href="#">Terms &amp; Conditions</a></li>
+		  <li>&bull;</li>
+		  <li><a href="#">Privacy</a></li>
+		</ul>
+		&copy; All Rights Reserved, Company LTD
+	  </div>
+	</div>
+	</footer>
+  <!-- /FOOTER -->
+  
+		  <!-- SCROLL TO TOP -->
 		<a href="#" id="toTop"></a>
-		
 
 		<!-- PRELOADER -->
 		<div id="preloader">
@@ -716,7 +410,6 @@
 				<span class="loader"></span>
 			</div>
 		</div><!-- /PRELOADER -->
-
 
 		<!-- JAVASCRIPT FILES -->
 		<script>var plugin_path = 'assets/plugins/';</script>
