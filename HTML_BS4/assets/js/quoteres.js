@@ -1,4 +1,4 @@
-alert("fu");
+
 
     $("#selectBuilding").change(function() {
     var buildingType = $("#selectBuilding").val();
@@ -19,8 +19,8 @@ alert("fu");
       $("#hybride, #productLineChoices").show();
       $("#commercial,#corporate,#residential").hide(); 
   }
-   
   
+
  });
      
     
