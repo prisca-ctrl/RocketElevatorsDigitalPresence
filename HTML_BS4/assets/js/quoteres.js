@@ -1,7 +1,8 @@
-// start page with select building type
-$("#selectBuilding").change(function() {
-    var buildingType = $("#selectBuilding").val();
+alert("fu");
 
+    $("#selectBuilding").change(function() {
+    var buildingType = $("#selectBuilding").val();
+ 
   if ( buildingType == "residential"){
       $("#residential, #productLineChoices").show();
       $("#commercial,#corporate,#hybride").hide(); 
@@ -19,10 +20,7 @@ $("#selectBuilding").change(function() {
       $("#commercial,#corporate,#residential").hide(); 
   }
    
-});
-        
-// actions possible
-   }
-});//full
-
-
+  
+ });
+     
+    

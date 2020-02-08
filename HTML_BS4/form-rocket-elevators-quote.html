@@ -178,7 +178,7 @@
 					  <option value="residential">&nbsp;Residential</option>
 					  <option value="commercial">&nbsp;Commercial</option>
 					  <option value="corporate">&nbsp;Corporate</option>
-					  <option value="hybrid">&nbsp;Hybrid</option>
+					  <option value="hybride">&nbsp;Hybride</option>
 					</select>
 				  </div>
 				  					<!---options -->
@@ -226,7 +226,7 @@
 					  <!--commercial infos-->
 
 					<!---corporate building infos-->
-					<div id="corporate " style="display: none;">
+					<div id="corporate" style="display: none;">
 						<div class="col-md-6">
 							<label for=" numberOfseparateTenants">How many apartments?</label>
 							<input id="corpSeparateTenants" class="form-control-lg" name="separateTenantsNumber" type="number" placeholder=" Number of separate tenants">
@@ -289,15 +289,38 @@
 						<input id="excPrice" class="form-control-lg" type="radio" value="excelium" name="price" class="radioStyle1" onclick="quoteMake()"><i style="color:blue; font-weight: bold;"> EXCELIUM</i>
 					  </div>
 				  </div>
-					
-				
-				
-				
+				  <button class="btn btn-green btn-lg" type="submit">SUBMIT QUOTE</button>	
 				<!--QUOTE INFOS-->
-		  
-			
 				</fieldset>
 			  </form>
+		</section>
+
+		<section id="quoteToClient">
+			<!-- Final Result -->
+			<h3>Here is your quote</h3>
+			<div id="cacul" class="form-control-lg">
+				<div class="col-md-6">
+					<label for="contact:projectname">Project Name *</label>
+					<input required type="text" value="" class="form-control" name="contact[projectname][required]" id="contact:projectname">
+				</div>
+				<div>
+					<label id="quoteResponse" for="quoteResponse">Here is your quote :</label> <br>
+				</div>	
+				<div>
+					<label id="unitPrice" for="unitPrice">Unit Price :</label> <br>
+				</div>
+				<div >
+					<label id="elevatorPrice" for="elevatorPrice">Elevator Price : </label> <br>
+				</div>
+				<div>
+					<label id="installationCost" for="installationCost">Installation Cost :</label> <br>
+				</div>
+				<div>
+					<label id="totalPrice" for="totalPrice"> Total Price :</label><br>
+				</div>	
+			</div>
+		
+
 		</section>
 				<!--FORMULAIRE COMPLET-->	
 
@@ -428,7 +451,14 @@
 		<!-- PAGELEVEL SCRIPTS -->
 		<script src="assets/js/contact.js"></script>
 		<script src="assets/js/quote.js"></script>
+		<script src="assets/js/quoteres.js"></script>
+		<script> 
+			
 
+		
+		
+		
+		</script>
 
 		<!-- 
 			GMAP.JS 
